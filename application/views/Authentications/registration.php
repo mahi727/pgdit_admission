@@ -2,14 +2,16 @@
     .container{
         width: 50%;
         margin-left: 25%;
+        padding-top: 25px;
+        padding-bottom: 25px;
         background: #fcfcfc;
         border: solid 1px #eee;
         box-shadow: 0 0 7px #926f93
     }
 </style>
+<h2 style="text-align: center; text-shadow: 2px 2px #E9BAE8;">Registration</h2>
 
 <div class="container">
-    <h2>Registration</h2>
     <form class="form-horizontal" action="/action_page.php">
 
         <div class="form-group">
@@ -66,9 +68,10 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-8">
-                <button type="submit" class="btn btn-default pull-right">Submit</button>
+        <div class="form-inline">
+            <div class="pull-right">
+                <?php echo anchor(base_url("Authentications/index"), 'Cancel', array('class' => 'btn btn-info', 'title' => 'cancel',)); ?>
+                <button type="submit" class="btn btn-success ">Submit</button>
             </div>
         </div>
     </form>

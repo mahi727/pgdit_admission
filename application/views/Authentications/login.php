@@ -14,9 +14,9 @@
         margin-left: 20px;
     }
 </style>
-
-<form action="#" class="login-page" method="post" accept-charset="utf-8">
-    <h3 style="text-align: center">Login to your account</h3>
+<?php echo form_open( base_url("Authentications/dashboard" ), ['class' => 'login-page']); ?>
+<!--<form action="#" class="login-page" method="post" accept-charset="utf-8">
+-->    <h3 style="text-align: center">Login to your account</h3>
     </br>
 
     <div class="input-group">
@@ -40,5 +40,7 @@
     </div>
 
     <hr>
-</form>
+<!--</form>
+--><?php echo form_close(); ?>
+
     
