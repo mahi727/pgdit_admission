@@ -34,9 +34,8 @@
         <input  name="submit" value="Login" class=".btn-default pull-right" type="submit">
     </div>
 
-    <div class="form-inline" style="margin-top: 3px;">
-<!--        <a href="registration" class="text-center">Do not have account? Register Now</a>
--->        <?php echo anchor(base_url("Authentications/registration"), 'Do not have account? Register Now', array('class' => 'text-center', 'title' => 'registration',)); ?>
+    <div class="form-inline" style="margin-top: 3px;">Do not have account?
+       <?php echo anchor(base_url("Authentications/registration"), ' Register Now', array('class' => 'text-center', 'title' => 'registration',)); ?>
     </div>
 
     <hr>

@@ -2,9 +2,12 @@
 <!DOCTYPE html>
 <html>
 <style>
-    .wrapper {
-        background-color: white;
-    }
+/*    .main__header {
+        background-image: url("<?php echo site_url() . "assets/"; ?>img/index.jpg" );
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }*/
 </style>
 <head>
     <meta charset="utf-8">
@@ -22,11 +25,12 @@
 
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
+    <div class="main__header">
     <?php
     $this->load->view('Layout/header');
   //  $this->load->view('Layout/leftMenu');
     ?>
-
+    </div>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
@@ -36,8 +40,9 @@
 <!--        </section>-->
 
 
-        <?php echo !empty($content) ? $content : ''; ?>
-
+        <div class="main__contant">
+            <?php echo !empty($content) ? $content : ''; ?>
+        </div>
     </div>
 
 </div>

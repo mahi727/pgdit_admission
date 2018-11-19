@@ -6,7 +6,7 @@
  * Time: 11:06 PM
  */
 
-class Authentication
+class Authentication extends CI_Model
 {
 
 }

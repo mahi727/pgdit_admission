@@ -6,7 +6,7 @@ class Authentications extends MY_Controller
     function __construct()
     {
         parent::__construct();
-
+        $this->load->model('Authentication');
     }
 
 
@@ -28,7 +28,7 @@ class Authentications extends MY_Controller
 
     function form(){
         $data = [];
-        $this->layout('Authentications/form', $data);
+        $this->layout('Applications/form', $data);
     }
 
 }

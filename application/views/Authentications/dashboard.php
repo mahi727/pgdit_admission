@@ -12,7 +12,7 @@
     }
 </style>
 
-<h2 style="text-align: center; text-shadow: 2px 2px #E9BAE8;">Registration</h2>
+<h2 style="text-align: center; text-shadow: 2px 2px #E9BAE8;">Notice</h2>
 
 <div class="page_body">
 </div>
